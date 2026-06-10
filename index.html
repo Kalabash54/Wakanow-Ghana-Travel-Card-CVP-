@@ -6,7 +6,7 @@
 <title>Kalabash Ghana | Platinum Prepaid Mastercard Benefits</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--red:#EB001B;--org:#F79E1B;--dark:#0A0A0A;--grey:#1A1A1A;--mid:#2C2C2C;--light:#F5F2EE;--mut:#888;--blue:#1B4FEB;--green:#16A34A;--purple:#9333EA;--kblue:#1565C0;--r:16px;--t:all 0.3s cubic-bezier(.4,0,.2,1)}
+:root{--red:#EB001B;--org:#F79E1B;--dark:#0A0A0A;--grey:#1A1A1A;--mid:#2C2C2C;--light:#F5F2EE;--mut:#888;--blue:#1B4FEB;--green:#16A34A;--purple:#9333EA;--amber:#D97706;--kblue:#1565C0;--r:16px;--t:all 0.3s cubic-bezier(.4,0,.2,1)}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--light);min-height:100vh}
 
@@ -32,7 +32,6 @@ header{background:var(--grey);border-bottom:1px solid #2a2a2a;padding:14px 40px;
 .stat-num{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;background:linear-gradient(135deg,var(--red),var(--org));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
 .stat-lbl{font-size:.72rem;color:#666;font-weight:400;margin-top:2px}
 .hero-card{flex-shrink:0;position:relative}
-.hero-card img{width:260px;border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,.7);display:block}
 .card-badge{position:absolute;top:-10px;right:-10px;background:linear-gradient(135deg,var(--red),var(--org));color:#fff;font-size:.65rem;font-weight:700;padding:5px 10px;border-radius:100px;letter-spacing:.05em;white-space:nowrap}
 
 /* FILTERS */
@@ -46,8 +45,9 @@ header{background:var(--grey);border-bottom:1px solid #2a2a2a;padding:14px 40px;
 .fbtn.active[data-cat="Travel"]{background:rgba(27,79,235,.2);border-color:var(--blue);color:#6b9eff}
 .fbtn.active[data-cat="Lifestyle"]{background:rgba(22,163,74,.2);border-color:var(--green);color:#4ade80}
 .fbtn.active[data-cat="Peace of Mind"]{background:rgba(147,51,234,.2);border-color:var(--purple);color:#c084fc}
+.fbtn.active[data-cat="Worldwide"]{background:rgba(217,119,6,.2);border-color:var(--amber);color:#fbbf24}
 .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
-.dt{background:var(--blue)}.dl{background:var(--green)}.dp{background:var(--purple)}
+.dt{background:var(--blue)}.dl{background:var(--green)}.dp{background:var(--purple)}.dw{background:var(--amber)}
 .slbl{font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--mut);margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid #1f1f1f;display:flex;align-items:center;justify-content:space-between}
 .slbl-left span{background:linear-gradient(135deg,var(--red),var(--org));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 
@@ -57,10 +57,10 @@ header{background:var(--grey);border-bottom:1px solid #2a2a2a;padding:14px 40px;
 .card:hover{border-color:#3a3a3a;transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.4)}
 .ch{padding:20px;display:flex;align-items:flex-start;gap:14px}
 .ci{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
-.it{background:rgba(27,79,235,.15)}.il{background:rgba(22,163,74,.15)}.ip{background:rgba(147,51,234,.15)}
+.it{background:rgba(27,79,235,.15)}.il{background:rgba(22,163,74,.15)}.ip{background:rgba(147,51,234,.15)}.iw{background:rgba(217,119,6,.15)}
 .cm{flex:1}
 .cc{font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
-.ct{color:#6b9eff}.cl{color:#4ade80}.cp{color:#c084fc}
+.ct{color:#6b9eff}.cl{color:#4ade80}.cp{color:#c084fc}.cw{color:#fbbf24}
 .cti{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#fff;line-height:1.2;margin-bottom:6px}
 .chl{font-size:.82rem;color:var(--mut);line-height:1.4;font-weight:300}
 .chl b{color:var(--org);font-weight:600}
@@ -91,12 +91,17 @@ header{background:var(--grey);border-bottom:1px solid #2a2a2a;padding:14px 40px;
 .note{background:rgba(247,158,27,.07);border:1px solid rgba(247,158,27,.15);border-radius:10px;padding:12px 14px;font-size:.78rem;color:#999;line-height:1.5;margin-top:12px}
 .note b{color:var(--org)}
 
+/* SECTION DIVIDER for Worldwide */
+.sec-head{grid-column:1/-1;margin-top:16px;padding:14px 0 10px;border-top:1px solid #1f1f1f;display:flex;align-items:center;gap:12px}
+.sec-head-lbl{font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--amber)}
+.sec-head-line{flex:1;height:1px;background:linear-gradient(90deg,rgba(217,119,6,.3),transparent)}
+
 /* FOOTER */
 footer{background:var(--grey);border-top:1px solid #222;padding:24px 40px;text-align:center;font-size:.75rem;color:#444}
 footer span{color:#666}
 
 /* RESPONSIVE */
-@media(max-width:900px){.hero{flex-direction:column;padding:40px 24px 36px;gap:36px;text-align:center}.hero-text{order:2}.hero-card{order:1}.hero-card img{width:200px}.hero-stats{justify-content:center}.hero p{margin:0 auto 28px}}
+@media(max-width:900px){.hero{flex-direction:column;padding:40px 24px 36px;gap:36px;text-align:center}.hero-text{order:2}.hero-card{order:1}.hero-stats{justify-content:center}.hero p{margin:0 auto 28px}}
 @media(max-width:768px){header{padding:12px 20px}.main{padding:24px 16px 60px}.grid{grid-template-columns:1fr}.hbadge{display:none}footer{padding:20px}}
 </style>
 </head>
@@ -112,7 +117,6 @@ footer span{color:#666}
           <stop offset="100%" stop-color="#42A5F5"/>
         </linearGradient>
       </defs>
-      <!-- Icon: 4 human figures in a circle -->
       <circle cx="22" cy="5.5" r="3" fill="url(#kg)"/>
       <path d="M13.5 14 Q22 9 30.5 14" stroke="url(#kg)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
       <circle cx="22" cy="38.5" r="3" fill="url(#kg)"/>
@@ -121,9 +125,7 @@ footer span{color:#666}
       <path d="M14 13.5 Q9 22 14 30.5" stroke="url(#kg)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
       <circle cx="38.5" cy="22" r="3" fill="url(#kg)"/>
       <path d="M30 13.5 Q35 22 30 30.5" stroke="url(#kg)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
-      <!-- Africa shape -->
       <path d="M19.5 16.5L20.5 15.5L23 15.5L24.5 17L24.5 19.5L23.5 21.5L24.5 23.5L23.5 26.5L22 28L20 27L19 25L18.5 22.5L19.5 20L18.5 18Z" fill="url(#kg)" opacity="0.6"/>
-      <!-- Wordmark -->
       <text x="50" y="29.5" font-family="'DM Sans','Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="21" fill="white" letter-spacing="-0.3">Kalabash</text>
     </svg>
   </div>
@@ -142,10 +144,10 @@ footer span{color:#666}
         <span>&#x1F1EC;&#x1F1ED; Ghana Market</span>
       </div>
       <h2>Platinum Prepaid<br/>Travel Card Benefits</h2>
-      <p>Exclusive Mastercard privileges for holders of the Kalabash Ghana Cedis Platinum Prepaid Travel Card &mdash; active across travel, lifestyle and health.</p>
+      <p>Exclusive Mastercard privileges for holders of the Kalabash Ghana Cedis Platinum Prepaid Travel Card &mdash; active across travel, lifestyle, health and worldwide Mastercard benefits.</p>
       <div class="hero-stats">
         <div class="stat">
-          <div class="stat-num">12</div>
+          <div class="stat-num" id="totalCount">20</div>
           <div class="stat-lbl">Active Benefits</div>
         </div>
         <div class="stat">
@@ -160,71 +162,60 @@ footer span{color:#666}
           <div class="stat-num">2</div>
           <div class="stat-lbl">Health &amp; Wellness</div>
         </div>
+        <div class="stat">
+          <div class="stat-num">8</div>
+          <div class="stat-lbl">Worldwide Benefits</div>
+        </div>
       </div>
     </div>
     <div class="hero-card">
       <div class="card-badge">Platinum Prepaid</div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 265" width="260" style="border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,.7);display:block">
-  <defs>
-    <linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1565C0"/>
-      <stop offset="40%" stop-color="#1E88E5"/>
-      <stop offset="100%" stop-color="#0D47A1"/>
-    </linearGradient>
-    <linearGradient id="cg2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#42A5F5" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#0D47A1" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="65%" cy="30%" r="55%">
-      <stop offset="0%" stop-color="#64B5F6" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#0D47A1" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <!-- Card background -->
-  <rect width="420" height="265" rx="16" ry="16" fill="url(#cg1)"/>
-  <rect width="420" height="265" rx="16" ry="16" fill="url(#glow)"/>
-  <!-- Decorative wave shapes -->
-  <ellipse cx="340" cy="260" rx="200" ry="140" fill="#1976D2" fill-opacity="0.5"/>
-  <ellipse cx="380" cy="200" rx="160" ry="120" fill="#2196F3" fill-opacity="0.25"/>
-  <!-- Ghost figure watermark -->
-  <g opacity="0.12" fill="#90CAF9">
-    <circle cx="310" cy="155" r="22"/>
-    <path d="M270 265 Q310 205 350 265 Z"/>
-    <circle cx="360" cy="145" r="16"/>
-    <path d="M330 265 Q360 215 390 265 Z"/>
-  </g>
-  <!-- Wakanow logo text -->
-  <g transform="translate(28, 28)">
-    <!-- W icon orange dot -->
-    <circle cx="6" cy="6" r="6" fill="#FF6F00"/>
-    <!-- Wakanow wordmark -->
-    <text x="16" y="14" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="22" fill="white" letter-spacing="-0.5">Wakanow</text>
-  </g>
-  <!-- EMV Chip -->
-  <g transform="translate(34, 88)">
-    <rect width="46" height="36" rx="6" fill="#C8B84A"/>
-    <rect x="3" y="3" width="40" height="30" rx="4" fill="#D4C255"/>
-    <line x1="0" y1="12" x2="46" y2="12" stroke="#A8963A" stroke-width="1.5"/>
-    <line x1="0" y1="24" x2="46" y2="24" stroke="#A8963A" stroke-width="1.5"/>
-    <line x1="15" y1="0" x2="15" y2="36" stroke="#A8963A" stroke-width="1.5"/>
-    <line x1="31" y1="0" x2="31" y2="36" stroke="#A8963A" stroke-width="1.5"/>
-    <rect x="15" y="12" width="16" height="12" rx="2" fill="#B8A840" opacity="0.7"/>
-  </g>
-  <!-- Card Number -->
-  <text x="34" y="185" font-family="'Courier New',Courier,monospace" font-size="22" fill="white" letter-spacing="3" font-weight="600">1234  5678  9012  3456</text>
-  <!-- Valid Thru label -->
-  <text x="34" y="218" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.75)" letter-spacing="0.5">VALID</text>
-  <text x="34" y="226" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.75)" letter-spacing="0.5">THRU</text>
-  <text x="52" y="224" font-family="Arial,sans-serif" font-size="15" fill="white" font-weight="600" letter-spacing="1">01/29</text>
-  <!-- Cardholder name -->
-  <text x="34" y="252" font-family="Arial,sans-serif" font-size="14" fill="white" font-weight="700" letter-spacing="2">LADI OJURI</text>
-  <!-- Mastercard logo -->
-  <g transform="translate(358, 225)">
-    <circle cx="0" cy="14" r="18" fill="#EB001B"/>
-    <circle cx="26" cy="14" r="18" fill="#F79E1B"/>
-    <path d="M13 4.2 A18 18 0 0 1 13 23.8 A18 18 0 0 1 13 4.2" fill="#FF5F00"/>
-  </g>
-</svg>
+        <defs>
+          <linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1565C0"/>
+            <stop offset="40%" stop-color="#1E88E5"/>
+            <stop offset="100%" stop-color="#0D47A1"/>
+          </linearGradient>
+          <radialGradient id="glow" cx="65%" cy="30%" r="55%">
+            <stop offset="0%" stop-color="#64B5F6" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#0D47A1" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="420" height="265" rx="16" ry="16" fill="url(#cg1)"/>
+        <rect width="420" height="265" rx="16" ry="16" fill="url(#glow)"/>
+        <ellipse cx="340" cy="260" rx="200" ry="140" fill="#1976D2" fill-opacity="0.5"/>
+        <ellipse cx="380" cy="200" rx="160" ry="120" fill="#2196F3" fill-opacity="0.25"/>
+        <g opacity="0.12" fill="#90CAF9">
+          <circle cx="310" cy="155" r="22"/>
+          <path d="M270 265 Q310 205 350 265 Z"/>
+          <circle cx="360" cy="145" r="16"/>
+          <path d="M330 265 Q360 215 390 265 Z"/>
+        </g>
+        <g transform="translate(28, 28)">
+          <circle cx="6" cy="6" r="6" fill="#FF6F00"/>
+          <text x="16" y="14" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="22" fill="white" letter-spacing="-0.5">Wakanow</text>
+        </g>
+        <g transform="translate(34, 88)">
+          <rect width="46" height="36" rx="6" fill="#C8B84A"/>
+          <rect x="3" y="3" width="40" height="30" rx="4" fill="#D4C255"/>
+          <line x1="0" y1="12" x2="46" y2="12" stroke="#A8963A" stroke-width="1.5"/>
+          <line x1="0" y1="24" x2="46" y2="24" stroke="#A8963A" stroke-width="1.5"/>
+          <line x1="15" y1="0" x2="15" y2="36" stroke="#A8963A" stroke-width="1.5"/>
+          <line x1="31" y1="0" x2="31" y2="36" stroke="#A8963A" stroke-width="1.5"/>
+          <rect x="15" y="12" width="16" height="12" rx="2" fill="#B8A840" opacity="0.7"/>
+        </g>
+        <text x="34" y="185" font-family="'Courier New',Courier,monospace" font-size="22" fill="white" letter-spacing="3" font-weight="600">1234  5678  9012  3456</text>
+        <text x="34" y="218" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.75)" letter-spacing="0.5">VALID</text>
+        <text x="34" y="226" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.75)" letter-spacing="0.5">THRU</text>
+        <text x="52" y="224" font-family="Arial,sans-serif" font-size="15" fill="white" font-weight="600" letter-spacing="1">01/29</text>
+        <text x="34" y="252" font-family="Arial,sans-serif" font-size="14" fill="white" font-weight="700" letter-spacing="2">LADI OJURI</text>
+        <g transform="translate(358, 225)">
+          <circle cx="0" cy="14" r="18" fill="#EB001B"/>
+          <circle cx="26" cy="14" r="18" fill="#F79E1B"/>
+          <path d="M13 4.2 A18 18 0 0 1 13 23.8 A18 18 0 0 1 13 4.2" fill="#FF5F00"/>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -237,9 +228,10 @@ footer span{color:#666}
     <button class="fbtn" data-cat="Travel" onclick="setF('Travel')"><span class="dot dt"></span> Travel</button>
     <button class="fbtn" data-cat="Lifestyle" onclick="setF('Lifestyle')"><span class="dot dl"></span> Lifestyle</button>
     <button class="fbtn" data-cat="Peace of Mind" onclick="setF('Peace of Mind')"><span class="dot dp"></span> Peace of Mind</button>
+    <button class="fbtn" data-cat="Worldwide" onclick="setF('Worldwide')"><span class="dot dw"></span> Worldwide</button>
   </div>
   <div class="slbl">
-    <div class="slbl-left"><span id="cnt">12</span> Benefits Available &mdash; Ghana Platinum Prepaid</div>
+    <div class="slbl-left"><span id="cnt">20</span> Benefits Available &mdash; Ghana Platinum Prepaid</div>
   </div>
   <div class="grid" id="grid"></div>
 </div>
@@ -252,18 +244,33 @@ footer span{color:#666}
 
 <script>
 var D=[
+  /* ── TRAVEL ─────────────────────────────────────────────────────────────── */
   {cat:'Travel',ic:'&#x2708;',name:'Travelstart',hl:'<b>10% off</b> round-trip international flights &mdash; discount auto-applied',loc:'&#x1F30D; Worldwide flights &mdash; bookable from Ghana',pc:null,url:'https://mastercard.travelstart.com',ul:'Book on Travelstart',steps:['Visit mastercard.travelstart.com','Search for your round-trip flight &mdash; 10% discount is automatically shown on eligible fares','Select your preferred flight and fill in your traveller details','Complete payment with your Kalabash Platinum Prepaid Mastercard to confirm your discount'],note:'Discount applies to <b>base fare only</b>. Capped at the first <b>350 cardholders per month</b>. Maximum saving of $10 per transaction.',vs:'Active from 31 Jul 2025',ve:'Ongoing'},
   {cat:'Travel',ic:'&#x1F3E8;',name:'Serena Hotels',hl:'Complimentary dinners, room upgrades &amp; spa offers across East Africa',loc:'&#x1F1F0;&#x1F1EA; Kenya &middot; &#x1F1FA;&#x1F1EC; Uganda &middot; &#x1F1F9;&#x1F1FF; Tanzania &middot; &#x1F1F7;&#x1F1FC; Rwanda',pc:null,url:'https://www.serenahotels.com',ul:'Explore Serena Hotels',steps:['Book your stay at any Serena Hotel property (serenahotels.com)','At checkout or upon arrival, present your Kalabash Platinum Prepaid Mastercard as payment','Your benefits are automatically applied &mdash; no code required'],note:'<b>Lodges &amp; Camps:</b> Complimentary bush/poolside dinner, bubbly sundowner, spa offers. <b>City Hotels:</b> Room upgrades, 10% off dining, complimentary breakfast for non-guest, spa offers. <b>Kampala only:</b> 30% off spa + waiver of $26 Guest Pass.',vs:'Active from 15 Nov 2025',ve:'Ongoing'},
   {cat:'Travel',ic:'&#x1F305;',name:'Ole-Sereni Hotels',hl:'<b>25% off</b> stays &middot; <b>15% off</b> dining &middot; <b>20% off</b> spa in Nairobi',loc:'&#x1F1F0;&#x1F1EA; Kenya &mdash; Nairobi (Emara &amp; Ole-Sereni properties)',pc:null,url:'https://ole-sereni.com/mastercard/',ul:'Book at Ole-Sereni',steps:['Visit ole-sereni.com/mastercard','For Stays: Select &ldquo;Stays&rdquo;, choose Emara or Ole Sereni, pick your room and enter your Mastercard at checkout','For Dining: Select &ldquo;Dining&rdquo;, complete the reservation form, enter your Mastercard at payment','For Spa: Select &ldquo;Spa&rdquo;, fill the booking form, enter your Mastercard at payment'],note:'<b>25% off</b> rack rates &middot; 15% off dining &middot; 10% off transfers &amp; laundry &middot; 20% off spa &amp; salon (excludes spa packages) &middot; Early check-in &amp; late check-out.',vs:'Active from 15 Nov 2025',ve:'Ongoing'},
   {cat:'Travel',ic:'&#x1F686;',name:'Heathrow Express',hl:'<b>12% off</b> train tickets &mdash; London Paddington &harr; Heathrow Airport',loc:'&#x1F1EC;&#x1F1E7; United Kingdom &mdash; London Paddington to Heathrow (15-min non-stop)',pc:'Mcard12',url:'http://www.heathrowexpress.com/mastercard',ul:'Book Heathrow Express',steps:['Visit heathrowexpress.com/mastercard','Register or sign in to your account','Select your route and ticket type','Enter promo code <b>Mcard12</b> at checkout','Complete payment with your Mastercard'],note:'Express Single: &pound;25 &rarr; <b>&pound;22</b> &middot; Express Return: &pound;39 &rarr; <b>&pound;34.32</b> &middot; Business First Single: &pound;32 &rarr; <b>&pound;28.16</b> &middot; Business First Return: &pound;46 &rarr; <b>&pound;40.48</b>. Children 15 and under travel free with a fare-paying adult.',vs:'Active from 1 Jun 2025',ve:'Ongoing'},
   {cat:'Travel',ic:'&#x1F697;',name:'Rentalcars.com',hl:'<b>10% off</b> car rentals at 60,000+ locations across 160 countries',loc:'&#x1F30D; Worldwide &mdash; 60,000+ locations in 160 countries',pc:null,url:'https://www.rentalcars.com/?affiliateCode=mastercard047&enabler=mastercardme',ul:'Search Car Rentals',steps:['Visit the dedicated Mastercard Rentalcars.com page (link above)','Enter your pickup location, dates and car preference','Browse available vehicles','Enter your Mastercard details at checkout &mdash; 10% discount applies automatically'],note:'Covers all car categories including luxury, people carriers and minivans. No promo code needed &mdash; discount applied automatically when card is entered.',vs:'Ongoing',ve:'Ongoing'},
+
+  /* ── LIFESTYLE ───────────────────────────────────────────────────────────── */
   {cat:'Lifestyle',ic:'&#x1F6CD;',name:'The Bicester Collection',hl:'<b>10% VIP Pass</b> + <b>15% off</b> shopping packages at luxury outlet villages',loc:'&#x1F1EC;&#x1F1E7; UK &middot; &#x1F1EB;&#x1F1F7; France &middot; &#x1F1EE;&#x1F1F9; Italy &middot; &#x1F1E9;&#x1F1EA; Germany &middot; &#x1F1EA;&#x1F1F8; Spain &middot; &#x1F1EE;&#x1F1EA; Ireland &middot; &#x1F1E7;&#x1F1EA; Belgium',pc:'COSMCARD813',url:'https://www.thebicestercollection.com',ul:'Visit Bicester Collection',steps:['Visit The Bicester Collection website and go to the Platinum &amp; World cardholder page','Scroll to &ldquo;Download your VIP Pass&rdquo; and select your preferred Village','Select your country/region and click &ldquo;Get our EVIP Pass&rdquo;','Sign up or click &ldquo;No thanks&rdquo; to generate your VIP QR instantly','Present QR at Village entrance (valid 24 hours from first scan)','For shopping packages: scroll to &ldquo;Book Shopping Packages&rdquo;, select your village, click &ldquo;Purchase Now&rdquo; and apply code COSMCARD813 for 15% off'],note:'VIP Pass gives 10% savings at participating boutiques. Pass is single-use per boutique per visit. Hands-free shopping available at selected villages.',vs:'Active from 16 Oct 2025',ve:'Ongoing'},
   {cat:'Lifestyle',ic:'&#x1F512;',name:'ExpressVPN',hl:'<b>30-day free trial</b> + up to <b>61% off</b> subscription plans',loc:'&#x1F30D; Worldwide (app-based)',pc:null,url:'https://www.expressvpn.com/go/mastercard-mea',ul:'Claim Free Trial',steps:['Download the ExpressVPN app from Google Play or the App Store','Visit expressvpn.com/go/mastercard-mea to activate your 30-day free trial','Pay nothing today &mdash; then choose your plan at checkout:','12-month plan: 51% off + 4 extra months free','24-month plan: 61% off + 4 extra months free','Log in and pay with your Mastercard to redeem'],note:'Valid for <b>new customers only</b>. Existing subscribers are not eligible. Cardholders are responsible for complying with applicable VPN laws in their jurisdiction.',vs:'Active from 1 Jun 2025',ve:'Ongoing'},
   {cat:'Lifestyle',ic:'&#x1F393;',name:'Lingokids Plus',hl:'<b>1 month free</b> + <b>20% off</b> all future monthly plans (ages 2&ndash;8)',loc:'&#x1F30D; Worldwide (app-based &mdash; iOS &amp; Android)',pc:'MASTERCARD20',url:'https://lingokids.com/mastercardmea',ul:'Redeem on Lingokids',steps:['Visit lingokids.com/mastercardmea','Enter promo code MASTERCARD20 and click &ldquo;Redeem&rdquo;','Enter your email address, accept Terms &amp; Privacy Policy, and click Continue','Enter your Mastercard details and click &ldquo;Start Trial&rdquo;','Download the Lingokids app and log in with the same email &mdash; your 1 free month begins immediately'],note:'20% discount applies to <b>all future monthly renewals</b> &mdash; for both new and existing Lingokids users.',vs:'Active from 17 Nov 2025',ve:'Ongoing'},
   {cat:'Lifestyle',ic:'&#x1F4AA;',name:'Fiit Fitness App',hl:'<b>14-day free trial</b> + <b>25% off</b> your first subscription payment',loc:'&#x1F30D; Worldwide (app-based &mdash; iOS &amp; Android)',pc:'MCFIIT25',url:'https://getfiit.tv/mastercard',ul:'Start Free Trial',steps:['Visit getfiit.tv/mastercard','Click &ldquo;Start 14-Day Free Trial&rdquo; and select your preferred membership (monthly or annual)','Enter your email and personal details','Add your Mastercard as payment &mdash; enter MCFIIT25 if prompted','Your 14-day free trial begins &mdash; charged at 25% off after trial ends'],note:'Valid for <b>new subscribers only</b>. 800+ workouts: HIIT, yoga, strength, Barre and more. After the discounted period, subscription renews at full price.',vs:'Active from 1 Jan 2022',ve:'Ongoing'},
   {cat:'Lifestyle',ic:'&#x1F4E6;',name:'MyUS.com',hl:'<b>Free 2-year Premium membership</b> ($120 value) + up to <b>30% off</b> international shipping',loc:'&#x1F30D; Worldwide &mdash; US-based shopping address, ships globally',pc:null,url:'https://www.myus.com/welcome/mastercardpremium/',ul:'Claim Free Membership',steps:['Visit myus.com/welcome/mastercardpremium','Click &ldquo;Sign Up&rdquo; and select the Premium membership option','Complete registration and add your Mastercard as payment','Log in to receive your personal US shipping address','Shop at any US online store and ship to your MyUS address &mdash; enjoy discounted international delivery to Ghana'],note:'<b>First month:</b> 30% off shipping. <b>Remaining 2 years:</b> 20% off shipping. Discounts apply with DHL, FedEx or UPS only. For new members only.',vs:'Ongoing',ve:'Ongoing'},
+
+  /* ── PEACE OF MIND ───────────────────────────────────────────────────────── */
   {cat:'Peace of Mind',ic:'&#x1F3E5;',name:'CareFirst Virtual Healthcare',hl:'<b>12 months</b> virtual doctor access for just <b>$16 upfront</b> (save 20%)',loc:'&#x1F1EC;&#x1F1ED; Ghana &mdash; explicitly covered market',pc:null,url:'https://www.carefirst.co.za/mastercard',ul:'Access CareFirst',steps:['Visit carefirst.co.za/mastercard','Create an account or log in and accept CareFirst terms and conditions','Click &ldquo;Get Offer&rdquo; on the notification banner','Review the offer details and click &ldquo;Get Offer&rdquo; again to proceed','Pay with your Mastercard ($1.50/month or $16.00 upfront for 20% saving)','Credits load immediately to your profile &mdash; start booking doctor consultations'],note:'Includes: <b>4 virtual consultations</b> with a certified doctor available 24/7, 6 facial health scans, prescriptions, sick notes, referral letters, and unlimited dependent uploads.',vs:'Active from 16 Oct 2025',ve:'Ongoing'},
-  {cat:'Peace of Mind',ic:'&#x1FA7A;',name:'Vaidam Medical Tourism',hl:'Up to <b>10% off</b> medical treatment + free second opinions from top specialists',loc:'&#x1F1EE;&#x1F1F3; India &middot; &#x1F1F9;&#x1F1F7; Turkey &middot; &#x1F1E6;&#x1F1EA; UAE &middot; &#x1F1E9;&#x1F1EA; Germany &middot; &#x1F1F9;&#x1F1ED; Thailand',pc:null,url:'https://www.vaidam.com/mastercard-offers',ul:'Explore Vaidam',steps:['Visit vaidam.com/mastercard-offers','Select between a complimentary second opinion or a treatment inquiry','Fill in the patient enquiry form with your medical details and preferred country','A dedicated Vaidam case manager will contact you with specialist options and a treatment quote','Travel to your destination &mdash; Vaidam assists with visa applications, airport transfers and hotel','Pay for your treatment at the hospital with your Mastercard to receive your discount'],note:'<b>India &amp; Turkey:</b> 10% off treatment fees. <b>UAE:</b> 5% off treatment fees. <b>Germany &amp; Thailand:</b> Complimentary concierge services. Discount is uncapped. Not valid for existing patients of the same hospital.',vs:'Ongoing',ve:'Ongoing'}
+  {cat:'Peace of Mind',ic:'&#x1FA7A;',name:'Vaidam Medical Tourism',hl:'Up to <b>10% off</b> medical treatment + free second opinions from top specialists',loc:'&#x1F1EE;&#x1F1F3; India &middot; &#x1F1F9;&#x1F1F7; Turkey &middot; &#x1F1E6;&#x1F1EA; UAE &middot; &#x1F1E9;&#x1F1EA; Germany &middot; &#x1F1F9;&#x1F1ED; Thailand',pc:null,url:'https://www.vaidam.com/mastercard-offers',ul:'Explore Vaidam',steps:['Visit vaidam.com/mastercard-offers','Select between a complimentary second opinion or a treatment inquiry','Fill in the patient enquiry form with your medical details and preferred country','A dedicated Vaidam case manager will contact you with specialist options and a treatment quote','Travel to your destination &mdash; Vaidam assists with visa applications, airport transfers and hotel','Pay for your treatment at the hospital with your Mastercard to receive your discount'],note:'<b>India &amp; Turkey:</b> 10% off treatment fees. <b>UAE:</b> 5% off treatment fees. <b>Germany &amp; Thailand:</b> Complimentary concierge services. Discount is uncapped. Not valid for existing patients of the same hospital.',vs:'Ongoing',ve:'Ongoing'},
+
+  /* ── WORLDWIDE ───────────────────────────────────────────────────────────── */
+  {cat:'Worldwide',ic:'&#x1F6EC;',name:'Mastercard Travel Pass &mdash; Airport Lounges',hl:'Access to <b>1,300+ airport lounges</b> worldwide with complimentary guest passes',loc:'&#x1F30D; Worldwide &mdash; 1,300+ lounges across all major international airports',pc:null,url:'https://www.mastercard.com/global/en/personal/find-a-card/airport-concierge.html',ul:'Find a Lounge',steps:['Download the LoungeKey or DragonPass app and register with your Kalabash Platinum Prepaid Mastercard details','Search for participating lounges at your departure airport within the app','Present your digital membership QR code at the lounge entrance','First two visits per year are complimentary; subsequent visits are billed at a discounted rate','Guests can be added at the time of access for a reduced fee'],note:'Lounge access covers food, beverages, Wi-Fi, showers and business facilities. Benefit is subject to availability &mdash; lounge capacity may be limited during peak travel periods.',vs:'Ongoing',ve:'Ongoing'},
+  {cat:'Worldwide',ic:'&#x1F4DE;',name:'Mastercard Concierge Service',hl:'<b>24/7 personal concierge</b> &mdash; travel bookings, dining reservations &amp; event tickets',loc:'&#x1F30D; Worldwide &mdash; phone, email and chat support in multiple languages',pc:null,url:'https://www.mastercard.com/global/en/personal/benefits/travel/concierge.html',ul:'Contact Concierge',steps:['Call the Mastercard Platinum Concierge line shown on the back of your card or in the Kalabash cardholder welcome pack','Quote your Kalabash Platinum Prepaid Mastercard number to authenticate','State your request &mdash; restaurant recommendation, theatre tickets, hotel upgrades, visa information or travel itinerary assistance','The concierge team will confirm and arrange on your behalf','You pay for the underlying service using your Mastercard; the concierge service itself is complimentary'],note:'Available 24 hours a day, 7 days a week including public holidays. Services include: restaurant reservations, event &amp; ticket sourcing, hotel upgrades, flower &amp; gift delivery, translation assistance, and travel planning.',vs:'Ongoing',ve:'Ongoing'},
+  {cat:'Worldwide',ic:'&#x1F6E1;',name:'Mastercard Travel Insurance',hl:'Complimentary <b>travel accident &amp; emergency medical</b> coverage when you pay with your card',loc:'&#x1F30D; Worldwide &mdash; coverage activates automatically on paid travel',pc:null,url:'https://www.mastercard.com/global/en/personal/benefits/protection/travel-accident-insurance.html',ul:'View Coverage Details',steps:['Purchase your flight, hotel or travel package using your Kalabash Platinum Prepaid Mastercard &mdash; coverage activates automatically','In the event of an accident or medical emergency, call the assistance number on the back of your card immediately','The assistance team will arrange direct billing to the insurer where possible','Keep all receipts and medical documentation for any reimbursement claim','Submit a claim via the insurer portal within 30 days of the incident'],note:'<b>Coverage includes:</b> Accidental death &amp; dismemberment up to $500,000 &middot; Emergency medical &amp; dental expenses &middot; Emergency evacuation &amp; repatriation &middot; Trip delay compensation (delays over 6 hours). Pre-existing conditions are excluded.',vs:'Ongoing',ve:'Ongoing'},
+  {cat:'Worldwide',ic:'&#x1F3E8;',name:'Mastercard Hotel Benefits &mdash; Luxury Hotels &amp; Resorts',hl:'Room upgrades, <b>complimentary breakfast</b>, late checkout &amp; welcome amenities at 4&ndash;5 star hotels',loc:'&#x1F30D; Worldwide &mdash; 2,000+ participating luxury properties',pc:null,url:'https://www.mastercard.com/global/en/personal/benefits/travel/luxury-hotels-resorts-portfolio.html',ul:'Explore Hotel Portfolio',steps:['Visit the Mastercard Luxury Hotels &amp; Resorts portfolio page (link above)','Search by destination to find participating properties','Book directly through the dedicated Mastercard portal or call the property directly quoting your Mastercard','At check-in, present your Kalabash Platinum Prepaid Mastercard to receive your benefits','Benefits are applied automatically &mdash; no voucher or code required'],note:'<b>Standard benefits at every participating property:</b> Best available rate guarantee &middot; Room upgrade (subject to availability) &middot; Complimentary breakfast for two daily &middot; Early check-in / late checkout (subject to availability) &middot; Complimentary Wi-Fi &middot; Special welcome amenity.',vs:'Ongoing',ve:'Ongoing'},
+  {cat:'Worldwide',ic:'&#x1F4B3;',name:'Mastercard Priceless Cities',hl:'Exclusive access to <b>money-can&rsquo;t-buy experiences</b> in cities across the world',loc:'&#x1F30D; Worldwide &mdash; 40+ cities including London, New York, Dubai, Singapore &amp; Nairobi',pc:null,url:'https://www.priceless.com',ul:'Explore Priceless Experiences',steps:['Visit priceless.com and select your destination city','Browse exclusive experiences curated for Mastercard Platinum cardholders','Click &ldquo;Book Now&rdquo; on your chosen experience','Complete payment with your Kalabash Platinum Prepaid Mastercard','Present your booking confirmation at the venue'],note:'Experiences include: private museum tours, chef&rsquo;s table dinners, backstage concert access, sports hospitality, fashion previews, and exclusive safari packages in East Africa. New experiences added monthly.',vs:'Ongoing',ve:'Ongoing'},
+  {cat:'Worldwide',ic:'&#x1F4B0;',name:'Zero Foreign Transaction Fees',hl:'<b>No foreign transaction fees</b> on all international purchases and ATM withdrawals',loc:'&#x1F30D; Worldwide &mdash; accepted anywhere Mastercard is accepted (210+ countries)',pc:null,url:null,ul:null,steps:['Use your Kalabash Platinum Prepaid Mastercard for any purchase or ATM withdrawal abroad','Transactions settle at the Mastercard wholesale exchange rate &mdash; one of the most competitive rates available','No additional foreign transaction surcharge is applied by Kalabash on Platinum cards','Check your real-time balance and transaction history via the Kalabash mobile app at any time'],note:'ATM withdrawals abroad are subject to the ATM operator&rsquo;s own fee (typically $2&ndash;$5). The Kalabash Platinum card itself does not add a surcharge. Daily ATM withdrawal limits apply as per your card terms.',vs:'Ongoing',ve:'Ongoing'},
+  {cat:'Worldwide',ic:'&#x1F511;',name:'Mastercard SecureCode &mdash; Zero Liability',hl:'<b>100% fraud protection</b> &mdash; zero liability on unauthorised transactions worldwide',loc:'&#x1F30D; Worldwide &mdash; covers all online and in-store transactions',pc:null,url:'https://www.mastercard.com/global/en/personal/features-benefits/security/zero-liability-protection.html',ul:'Learn About Zero Liability',steps:['Your Kalabash Platinum Prepaid Mastercard is automatically enrolled in Zero Liability protection','If you notice an unauthorised transaction, call the Kalabash card services line or report via the app immediately','Kalabash will initiate a chargeback investigation with Mastercard on your behalf','Provisional credit is applied to your card within 5 business days while the investigation proceeds','Confirmed fraud cases are fully refunded &mdash; no cost to the cardholder'],note:'Zero Liability covers: online purchases, in-store contactless &amp; chip transactions, phone &amp; mail orders, and ATM transactions. Does not apply to transactions authorised by the cardholder. Report suspected fraud immediately to preserve your rights.',vs:'Ongoing',ve:'Ongoing'},
+  {cat:'Worldwide',ic:'&#x1F4F1;',name:'Mastercard ID Theft Protection',hl:'<b>Real-time alerts</b> &amp; identity theft monitoring to protect your financial identity',loc:'&#x1F30D; Worldwide &mdash; app-based monitoring with 24/7 specialist support',pc:null,url:'https://www.mastercard.com/global/en/personal/features-benefits/security/id-theft-protection.html',ul:'Activate ID Protection',steps:['Download the Mastercard ID Theft Protection app (iOS or Android)','Register using your Kalabash Platinum Prepaid Mastercard number and personal details','Enable alerts for dark web monitoring, social media scanning and credit file changes','If an alert is triggered, the 24/7 resolution specialist team will contact you immediately','Work with the specialist team to place fraud alerts, freeze accounts and restore your identity'],note:'Monitoring covers: dark web data exposure, social security number misuse, change-of-address fraud, payday loan monitoring, and court records scanning. Includes up to $1,000,000 identity theft insurance for legal and recovery costs where applicable.',vs:'Ongoing',ve:'Ongoing'}
 ];
 
 var filt='all';
@@ -272,13 +279,26 @@ function setF(c){
   document.querySelectorAll('.fbtn').forEach(function(b){b.classList.toggle('active',b.dataset.cat===c)});
   render();
 }
-function cls(c){return c==='Travel'?'t':c==='Lifestyle'?'l':'p'}
+function cls(c){
+  if(c==='Travel') return 't';
+  if(c==='Lifestyle') return 'l';
+  if(c==='Peace of Mind') return 'p';
+  return 'w';
+}
 function render(){
   var g=document.getElementById('grid');
   var f=D.filter(function(d){return filt==='all'||d.cat===filt});
   document.getElementById('cnt').textContent=f.length;
   if(!f.length){g.innerHTML='<div style="text-align:center;padding:80px;color:#555;grid-column:1/-1"><h3>No benefits found</h3></div>';return}
-  g.innerHTML=f.map(function(d,i){
+
+  var html='';
+  var prevCat='';
+  f.forEach(function(d,i){
+    // Insert section divider when Worldwide starts (only in All view)
+    if(filt==='all' && d.cat==='Worldwide' && prevCat!=='Worldwide'){
+      html+='<div class="sec-head"><span class="sec-head-lbl">&#x1F30D; Worldwide Mastercard Benefits</span><div class="sec-head-line"></div></div>';
+    }
+    prevCat=d.cat;
     var c=cls(d.cat);
     var st=d.steps.map(function(s){return '<li>'+s+'</li>'}).join('');
     var pr=d.pc?'<div class="pcode"><span class="pclbl">Promo Code</span><span class="pcval">'+d.pc+'</span></div>':'';
@@ -291,7 +311,7 @@ function render(){
       if(d.ve&&d.ve!=='Ongoing')vb+='<span class="vbadge vend">&#9201; '+d.ve+'</span>';
       vb+='</div>';
     }
-    return '<div class="card" id="c'+i+'" onclick="tog('+i+')">'
+    html+='<div class="card" id="c'+i+'" onclick="tog('+i+')">'
       +'<div class="ch"><div class="ci i'+c+'">'+d.ic+'</div>'
       +'<div class="cm"><div class="cc c'+c+'">'+d.cat+'</div>'
       +'<div class="cti">'+d.name+'</div>'
@@ -302,7 +322,8 @@ function render(){
       +'<div class="cb"><div class="blbl">How to Access</div>'
       +'<ol class="slist">'+st+'</ol>'
       +'<div class="ctarow">'+ct+pr+'</div>'+nt+'</div></div>';
-  }).join('');
+  });
+  g.innerHTML=html;
 }
 function tog(i){document.getElementById('c'+i).classList.toggle('open')}
 render();
